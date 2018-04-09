@@ -1,6 +1,6 @@
 ---
 
-  - name: .NET | Make sure HTTPS is supported by apt
+- name: .NET | Make sure HTTPS is supported by apt
   package:
     name: apt-transport-https
     state: present
