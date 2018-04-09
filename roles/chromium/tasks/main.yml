@@ -36,15 +36,7 @@
     src: chrome-extensions.json.j2
     dest: "/usr/share/chromium-browser/extensions/{{ item }}.json"
   with_items:
-    - cjpalhdlnbpafiamejdnhcphjbkeiagm # ublock
-    - ajpgkpeckebdhofmmjfgcjjiiejpodla # Xmarks Bookmark Sync
     - bcjindcccaagfpapjjmafapmmgkkhgoa # JSON Formatter
-    - miefikpgahefdbcgoiicnmpbeeomffld # Blackfire Companion
-    - fjnbnpbmkenffdnngjfgmeleoegfcffe # Stylish
-    # - jbbplnpkjmmeebjpijfedlgcdilocofh # wave-evaluation-tool
-    # - idgpnmonknjnojddfkpgkljpfnnfcklj # ModHeader
-    # - jgbbilmfbammlbbhmmgaagdkbkepnijn # Cookie Inspector
-    # - dapjbgnjinbpoindlpdmhochffioedbn # builtwith-technology-prof
-    # - deoaddaobnieaecelinfdllcgdehimih # kimono
-    # - fhbjgbiflinjbdggehcddcbncdddomop # postman
+    - jgbbilmfbammlbbhmmgaagdkbkepnijn # Cookie Inspector
+    - fhbjgbiflinjbdggehcddcbncdddomop # postman
   when: chromium.extensions
