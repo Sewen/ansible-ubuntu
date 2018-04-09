@@ -1,0 +1,16 @@
+---
+
+vscode_package_url: https://az764295.vo.msecnd.net/stable/490ef761b76b3f3b3832eff7a588aac891e5fe80/code_1.19.2-1515599945_amd64.deb
+
+vscode_package_file: /tmp/vscode.deb
+
+vscode_become_user: ""
+
+vscode_install_extentions: true
+
+vscode_extensions:
+  - ms-vscode.vs-keybindings
+  - ms-vscode.csharp
+  - jchannon.csharpextensions
+  - jorgeserrano.vscode-csharp-snippets
+  - waderyan.gitblame

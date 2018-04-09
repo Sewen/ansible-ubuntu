@@ -1,0 +1,21 @@
+---
+
+- name: Download vscode package
+  get_url:
+    url: "{{ vscode_package_url }}"
+    dest: "{{ vscode_package_file }}"
+
+- name: Install vscode
+  shell: dpkg -i "{{ vscode_package_file }}" && sudo apt-get install -f
+
+- name: Cleanup
+  file:
+    path: "{{ vscode_package_file }}"
+    state: absent
+
+- name: Install extensions
+  shell: code --install-extension "{{ item }}"
+  with_items: "{{ vscode_extensions }}"
+  when: vscode_install_extentions
+  become: true
+  become_user: "{{ vscode_become_user }}"
