@@ -6,10 +6,11 @@
     # Server roles
     - { role: docker, become: true }
     - { role: nodejs, become: true }
+    - { role: python, become: true }
+    - { role: dotnet-core, become: true }
     - { role: ssh, become: true }
     # Desktop roles
     - { role: chromium, become: true }
     - { role: dbeaver, become: true }
     - { role: filezilla, become: true }
-    - { role: gdrive, become: true }
     - { role: vagrant, become: true }
